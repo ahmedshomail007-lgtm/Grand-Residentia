@@ -1,2 +1,2 @@
 # Grand-Residentia
-Hotel Booking Management system 
+Grand Residentia is a professional hotel booking platform designed to streamline luxury property discovery in Islamabad through a responsive, user-centric interface. The website features a robust search module for guest and date management, alongside a curated catalog of five-star accommodations that display real-time pricing and localized data via interactive hotel cards. By integrating semantic navigation and a structured contact framework, the platform provides a seamless, high-performance environment for travelers to secure premium stays in Pakistan's capital.
