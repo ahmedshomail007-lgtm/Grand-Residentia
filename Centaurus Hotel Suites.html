@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Centaurus Hotel Suites - Grand Residentia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desgin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+
+        .logo-link {
+    text-decoration: none;
+    color: #1d4ed8; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.logo-link span {
+    color: #1d4ed8; 
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .hotel-detail-grid {
+            padding: 100px 0;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            flex-wrap: wrap;
+            flex: 1; /* Pushes footer to bottom */
+        }
+        
+        .detail-img-box { flex: 1.2; min-width: 350px; }
+        .detail-img-box img {
+            width: 100%;
+            border-radius: 30px;
+            box-shadow: var(--shadow);
+            border: 8px solid white;
+            transition: transform 0.3s ease;
+        }
+
+        .detail-img-box img:hover {
+            transform: scale(1.01);
+        }
+        
+        .detail-info-box { flex: 1; min-width: 300px; }
+        .detail-info-box h1 { font-size: 2.5rem; margin-bottom: 10px; color: var(--text-main); }
+        .location-tag { color: var(--primary); margin-bottom: 20px; font-weight: 500; }
+        .price-large { font-size: 2rem; font-weight: 800; color: #16a34a; margin: 20px 0; }
+        
+        .amenity-flex {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .amenity-item { display: flex; align-items: center; gap: 10px; color: var(--text-muted); }
+        .amenity-item i { color: var(--primary); }
+        
+        .book-now-large {
+            display: block;
+            text-align: center;
+            background: var(--primary);
+            color: white;
+            padding: 18px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+        .book-now-large:hover { 
+            background: var(--primary-dark); 
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+<h1 class="logo"> 
+    <a href="frontend.html" class="logo-link">
+        <i class="fas fa-concierge-bell"></i> <span>Grand</span> Residentia
+    </a></h1>            <nav>
+                <ul>
+                    <li><a href="frontend.html">Home</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container hotel-detail-grid">
+        <div class="detail-img-box">
+            <img src="images/Centaurus Suites.jpg" alt="Centaurus Suites">
+        </div>
+        
+        <div class="detail-info-box">
+            <div class="location-tag"><i class="fas fa-map-marker-alt"></i> Jinnah Avenue, Sector F-8/4, Islamabad</div>
+            <h1>Centaurus Hotel Suites</h1>
+            <p>Experience the height of luxury in Islamabad's most iconic landmark. These suites offer a sophisticated lifestyle with unparalleled views of the Margalla Hills and direct private access to the world-class Centaurus Mall.</p>
+            
+            <div class="price-large">PKR 25,117 <span>/ night</span></div>
+
+            <div class="amenity-flex">
+                <div class="amenity-item"><i class="fas fa-shopping-cart"></i> Mall Access</div>
+                <div class="amenity-item"><i class="fas fa-mountain"></i> Margalla Views</div>
+                <div class="amenity-item"><i class="fas fa-dumbbell"></i> Signature Gym</div>
+                <div class="amenity-item"><i class="fas fa-key"></i> High Privacy</div>
+            </div>
+
+            <a href="contact.html" class="book-now-large">Book This Suite Now</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div>
+                <h3>Grand Residentia</h3>
+                <p>Your trusted hotel booking partner in Islamabad.</p>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="frontend.html">Home</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div id="contact" class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i>Khayaban-e-Suhrwardy Opposite Convention Centre Islamabad 44000, Pakistan</p>
+                <p><i class="fas fa-envelope"></i> info@GrandResidentia.com</p>
+                <p><i class="fas fa-phone-alt"></i> +92 318-5379988</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Grand Residentia. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

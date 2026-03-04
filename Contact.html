@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Grand Residentia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desgin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+   .logo-link {
+    text-decoration: none;
+    color: #1d4ed8; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.logo-link span {
+    color: #1d4ed8; 
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+
+        .contact-page {
+            padding: 80px 0;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .info-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: 0.3s;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .info-card:hover {
+            transform: translateX(10px);
+            border-color: var(--primary);
+        }
+
+        .info-card i {
+            font-size: 1.5rem;
+            color: var(--primary);
+            background: rgba(37, 99, 235, 0.1);
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        /* --- RIGHT SIDE: FORM --- */
+        .contact-form-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-form-container h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            outline: none;
+            font-family: inherit;
+            transition: 0.3s;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 900px) {
+            .contact-page { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+<h1 class="logo"> 
+    <a href="frontend.html" class="logo-link">
+        <i class="fas fa-concierge-bell"></i> <span>Grand</span> Residentia
+    </a></h1>             <nav>
+                <ul>
+                    <li><a href="frontend.html">Home</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container contact-page">
+        <div class="contact-info">
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h4>Our Location</h4>
+                    <p>Khayaban-e-Suhrwardy Opposite Convention Centre Islamabad 44000, Pakistan</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                    <h4>Call Us</h4>
+                    <p>+92 318-5379988</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>Email Us</h4>
+                    <p>info@GrandResidentia.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+            <h2>Send a Message</h2>
+            <p style="margin-bottom: 30px; color: var(--text-muted);">Have questions? We're here to help you find the perfect stay.</p>
+            
+            <form action="#">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Add email address">
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="Hotel Booking Inquiry">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Write your message here..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+<footer>
+        <div class="container footer-container">
+            <div>
+                <h3>Grand Residentia</h3>
+                <p>Your trusted hotel booking partner in Islamabad.</p>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="frontend.html">Home</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div id="contact" class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i>Khayaban-e-Suhrwardy Opposite Convention Centre Islamabad 44000, Pakistan</p>
+                <p><i class="fas fa-envelope"></i> info@GrandResidentia.com</p>
+                <p><i class="fas fa-phone-alt"></i> +92 318-5379988</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Grand Residentia. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

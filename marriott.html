@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marriott Hotel - Grand Residentia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desgin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+
+        .logo-link {
+            text-decoration: none;
+            color: #1d4ed8; /* This makes the name Dark Blue */
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            transition: 0.3s ease;
+        }
+
+        .logo-link span {
+            color: #1d4ed8; /* Ensures the 'Grand' span is also blue */
+        }
+
+        .logo-link:hover {
+            opacity: 0.8;
+            transform: scale(1.02);
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .hotel-detail-grid {
+            padding: 100px 0;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            flex-wrap: wrap;
+            flex: 1; 
+        }
+        
+        .detail-img-box { flex: 1.2; min-width: 350px; }
+        .detail-img-box img {
+            width: 100%;
+            border-radius: 30px;
+            box-shadow: var(--shadow);
+            border: 8px solid white;
+        }
+        
+        .detail-info-box { flex: 1; min-width: 300px; }
+        .detail-info-box h1 { font-size: 2.5rem; margin-bottom: 10px; color: var(--text-main); }
+        .location-tag { color: var(--primary); margin-bottom: 20px; font-weight: 500; }
+        .price-large { font-size: 2rem; font-weight: 800; color: #16a34a; margin: 20px 0; }
+        
+        .amenity-flex {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .amenity-item { display: flex; align-items: center; gap: 10px; color: var(--text-muted); }
+        .amenity-item i { color: var(--primary); }
+        
+        .book-now-large {
+            display: block;
+            text-align: center;
+            background: var(--primary);
+            color: white;
+            padding: 18px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+        .book-now-large:hover { background: var(--primary-dark); transform: translateY(-3px); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+<h1 class="logo"> 
+    <a href="frontend.html" class="logo-link">
+        <i class="fas fa-concierge-bell"></i> <span>Grand</span> Residentia
+    </a></h1>             <nav>
+                <ul>
+                    <li><a href="frontend.html">Home</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container hotel-detail-grid">
+        <div class="detail-img-box">
+            <img src="images/Marriott Hotel.jpg" alt="Marriott Hotel">
+        </div>
+        
+        <div class="detail-info-box">
+            <div class="location-tag"><i class="fas fa-map-marker-alt"></i> F-5/1, Aga Khan Rd, Islamabad</div>
+            <h1>Islamabad Marriott Hotel</h1>
+            <p>Experience world-class hospitality in the heart of the capital. Known for its high-security, executive lounges, and the finest dining experiences in Pakistan.</p>
+            
+            <div class="price-large">PKR 48,828 <span>/ night</span></div>
+
+            <div class="amenity-flex">
+                <div class="amenity-item"><i class="fas fa-shield-alt"></i> High Security</div>
+                <div class="amenity-item"><i class="fas fa-swimming-pool"></i> Pool & Spa</div>
+                <div class="amenity-item"><i class="fas fa-utensils"></i> 5 Restaurants</div>
+                <div class="amenity-item"><i class="fas fa-wifi"></i> Free WiFi</div>
+            </div>
+
+            <a href="contact.html" class="book-now-large">Book This Hotel Now</a>
+        </div>
+    </div> <footer>
+        <div class="container footer-container">
+            <div>
+                <h3>Grand Residentia</h3>
+                <p>Your trusted hotel booking partner in Islamabad.</p>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="frontend.html">Home</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div id="contact" class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i>Khayaban-e-Suhrwardy Opposite Convention Centre Islamabad 44000, Pakistan</p>
+                <p><i class="fas fa-envelope"></i> info@GrandResidentia.com</p>
+                <p><i class="fas fa-phone-alt"></i> +92 318-5379988</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Grand Residentia. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

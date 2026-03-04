@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Hotels - Grand Residentia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desgin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Specific page styling to ensure cards are uniform */
+        .logo-link {
+            text-decoration: none;
+            color: #1d4ed8;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            transition: 0.3s ease;
+        }
+
+        .logo-link span {
+            color: #1d4ed8;
+        }
+
+        .logo-link:hover {
+            opacity: 0.8;
+            transform: scale(1.02);
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .price {
+            display: block;
+            margin: 15px 0;
+            font-weight: 700;
+            color: #1d4ed8;
+            font-size: 1.1rem;
+        }
+
+        .view-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 12px 20px;
+            margin-top: auto; 
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .view-btn:hover {
+            background: linear-gradient(135deg, #1d4ed8, #1e40af);
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.4);
+        }
+
+        .view-btn i {
+            transition: transform 0.3s ease;
+        }
+
+        .view-btn:hover i {
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo"> 
+                <a href="frontend.html" class="logo-link">
+                    <i class="fas fa-concierge-bell"></i> <span>Grand</span> Residentia
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="frontend.html">Home</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hotels-page-header" style="padding: 120px 0 60px; text-align: center; background: #f1f5f9;">
+        <div class="container">
+            <h1>Top Rated 5-Star Hotels in Islamabad</h1>
+            <p>Explore our curated selection of luxury and executive stays.</p>
+        </div>
+    </section>
+
+    <section class="hotels">
+        <div class="container">
+            <div class="hotel-cards">
+                <div class="card">
+                    <img src="images/Marriott Hotel.jpg" alt="Marriott Hotel">
+                    <div class="card-content">
+                        <h3>Islamabad Marriott Hotel</h3>
+                        <p>5 Star Hotel | Aga Khan Rd, F-5/1</p>
+                        <span class="price">PKR 48,828 / night</span>
+                        <a href="marriott.html" class="view-btn">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Serena Hotel.jpg" alt="Serena Hotel">
+                    <div class="card-content">
+                        <h3>Islamabad Serena Hotel</h3>
+                        <p>5 Star Hotel | G-5 Islamabad</p>
+                        <span class="price">PKR 47,870 / night</span>
+                        <a href="Islamabad Serena Hotel.html" class="view-btn">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Centaurus Suites.jpg" alt="Centaurus Suites">
+                    <div class="card-content">
+                        <h3>Centaurus Hotel Suites</h3>
+                        <p>5 Star Hotel | Sector F-8/4</p>
+                        <span class="price">PKR 25,117 / night</span>
+                        <a href="Centaurus Hotel Suites.html" class="view-btn">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Grand Islamabad.jpg" alt="Grand Islamabad">
+                    <div class="card-content">
+                        <h3>Grand Islamabad Hotel</h3>
+                        <p>5 Star Hotel | Sector E-11/1</p>
+                        <span class="price">PKR 18,670 / night</span>
+                        <a href="Grand Islamabad Hotel.html" class="view-btn">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Grand Royal.jpg" alt="Grand Royal">
+                    <div class="card-content">
+                        <h3>Executive Grand Royal</h3>
+                        <p>5 Star Hotel | Sector E-11/4</p>
+                        <span class="price">PKR 15,470 / night</span>
+                        <a href="Executive Grand Royal.html" class="view-btn">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Canadian Inn.jpg" alt="Canadian Inn">
+                    <div class="card-content">
+                        <h3>Canadian Inn</h3>
+                        <p>5 Star Hotel | Sector G-10/1</p>
+                        <span class="price">PKR 17,000 / night</span>
+                        <a href="Canadian Inn.html" class="view-btn">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div>
+                <h3>Grand Residentia</h3>
+                <p>Your trusted hotel booking partner in Islamabad.</p>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="frontend.html">Home</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Khayaban-e-Suhrwardy, Islamabad</p>
+                <p><i class="fas fa-envelope"></i> info@GrandResidentia.com</p>
+                <p><i class="fas fa-phone-alt"></i> +92 318-5379988</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Grand Residentia. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

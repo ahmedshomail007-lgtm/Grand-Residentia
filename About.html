@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Grand Residentia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desgin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+
+.logo-link {
+    text-decoration: none;
+    color: #1d4ed8; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.logo-link span {
+    color: #1d4ed8; 
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+        .about-section {
+            padding: 100px 0;
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            flex-wrap: wrap;
+        }
+
+        .about-image-wrapper {
+            flex: 0.1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 450px;
+        }
+
+        .image-container {
+            position: relative;
+            width: 90%;
+            max-width: 450px;
+            z-index: 1;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 30px; 
+            display: block;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            border: 4px solid var(--white); 
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .image-container::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100%;
+            height: 100%;
+            background: var(--primary);
+            border-radius: 50px;
+            z-index: -1;
+            opacity: 0.2;
+            transition: 0.5s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.02);
+            box-shadow: 10px 30px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-container:hover::before {
+            top: -20px;
+            right: -20px;
+            opacity: 0.5;
+        }
+
+
+        .about-text {
+            flex: 1.2;
+            min-width: 300px;
+        }
+
+        .about-text h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+
+        .founder-tag {
+            display: inline-block;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--primary);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            border: 1px solid var(--primary);
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .about-section { gap: 50px; text-align: center; }
+            .image-container::after, .image-container::before { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+<h1 class="logo"> 
+    <a href="frontend.html" class="logo-link">
+        <i class="fas fa-concierge-bell"></i> <span>Grand</span> Residentia
+    </a>
+</h1>            <nav>
+                <ul>
+                    <li><a href="frontend.html">Home</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="about-section">
+            <div class="about-image-wrapper">
+                <div class="image-container">
+                    <img src="c:\Users\HP\Desktop\New folder\unnamed.jpg" alt="Founder of Grand Residentia">
+                </div>
+            </div>
+            
+            <div class="about-text">
+                <span class="founder-tag">Our Vision</span>
+                <h2>Meet the Founder</h2>
+                <p>Hello! I am the visionary behind <strong>Grand Residentia</strong>. With a passion for hospitality and a deep love for the beauty of Islamabad, I started this platform to bridge the gap between travelers and the finest stays in the capital.</p>
+                
+                <p>Our journey began in 2026 when I noticed how difficult it was for visitors to find reliable, high-quality information about 5-star hotels. Since then, we have grown into a trusted partner for thousands of travelers.</p>
+                
+                <p>My mission is simple: to make your stay in Islamabad as comfortable and luxurious as possible by providing a curated list of the city's best gems.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div>
+                <h3>Grand Residentia</h3>
+                <p>Your trusted hotel booking partner in Islamabad.</p>
+            </div>
+           <div id="contact" class="footer-contact">
+    <h4>Contact</h4>
+    
+    <p><i class="fas fa-map-marker-alt"></i> Khayaban-e-Suhrwardy Opposite Convention Centre Islamabad 44000, Pakistan</p>
+    
+    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@GrandResidentia.com">info@GrandResidentia.com</a></p>
+    
+    <p><i class="fas fa-phone-alt"></i> Phone: <a href="tel:+923185379988">+92 318-5379988</a></p>
+
+        <div class="copyright">
+            <p>© 2026 Grand Residentia. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+</body>
+</html>
